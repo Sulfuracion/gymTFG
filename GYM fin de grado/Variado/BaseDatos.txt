@@ -1,0 +1,76 @@
+CREATE DATABASE gimnasio;
+
+USE gimnasio;
+
+CREATE TABLE usuarios (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(50) NOT NULL,
+    correo VARCHAR(50) NOT NULL,
+    contrasena VARCHAR(50) NOT NULL,
+    rol ENUM('staff', 'entrenador', 'usuario') NOT NULL
+);
+
+CREATE TABLE ejercicios (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(50) NOT NULL,
+    grupo_muscular VARCHAR(50) NOT NULL,
+    tecnica TEXT,
+    video TEXT
+);
+
+CREATE TABLE series (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT NOT NULL,
+    id_ejercicio INT NOT NULL,
+    peso FLOAT NOT NULL,
+    repeticiones INT NOT NULL,
+    rir INT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
+    FOREIGN KEY (id_ejercicio) REFERENCES ejercicios(id)
+);
+
+CREATE TABLE personal_records (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT NOT NULL,
+    sentadilla FLOAT NOT NULL,
+    press_banca FLOAT NOT NULL,
+    peso_muerto FLOAT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+);
+
+CREATE TABLE progreso (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    repeticiones INT NOT NULL,
+    peso FLOAT NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+);
+
+CREATE TABLE eventos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(50) NOT NULL,
+    descripcion TEXT,
+    fecha_inicio TIMESTAMP NOT NULL,
+    fecha_fin TIMESTAMP NOT NULL
+);
+
+CREATE TABLE rutinas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT NOT NULL,
+    nombre VARCHAR(50) NOT NULL,
+    descripcion TEXT,
+    ejercicios TEXT,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+);
+
+CREATE TABLE dietas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT NOT NULL,
+    descripcion TEXT,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+);

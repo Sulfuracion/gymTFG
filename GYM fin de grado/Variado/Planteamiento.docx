@@ -1,0 +1,88 @@
+1-Descripción
+Esta aplicación multiplataforma se fundamenta en la falta de control en rutinas del gimnasio, debido a que la mayoría de personas acostumbran a usar el block de notas se sus dispositivos móviles o libretas físicas y esta app pretende facilitar el control y gestión de estos datos.
+
+Al entrar a dicha app tendrás dos opciones, ver tu progreso o nuevo entrenamiento
+
+Si seleccionas “ver tu progreso” tendrás acceso a las siguientes funciones;
+- Un apartado especifico para los PR(personal record), este termino se suele usar en la categoría de “powerlifting” que consiste en mover el máximo peso posible a una sola repetición en tres ejercicios; Sentadilla, Press de banca, peso muerto
+- La app te recomendará cuando debes ir subiéndole el peso o repeticiones, 
+- Al iniciar un ejercicio te saldrá una guía con los pesos y repeticiones que sueles hacer
+- Podrás ver los entrenamientos que has hecho en un calendario y tu progreso en una grafica
+- Un calculo de cual seria tu repetición máxima(Esta recomendación saldrá una vez al mes)
+
+Si seleccionas “nuevo entrenamiento” tendrás acceso a las siguientes funciones;
+- Una base de datos la cual guarde tus series con el peso que le has puesto, el numero de repeticiones y RIR. El termino “RIR” se usa para referirse a cuantas repeticiones estás del fallo, siendo RIR 0 el fallo muscular
+- Tendrás un selector de ejercicios a modo de guía, tu solo tendrás que seleccionar el grupo/s musculares que deseas trabajar y te saldrá como realizar la técnica (tanto en video como en texto)
+- Podrás añadir y compartir tus propios ejercicios o variantes de estos
+
+En esta app habrá varios tipos de usuarios
+Staff (admin’s)
+- Un Staff(admin) puede ser entrenador, pero no viceversa
+- Dar de alta a personas
+- Banear usuarios
+- Hacer eventos
+- Marcar rutinas
+
+Entrenadores
+- Marcar rutina
+- Citar usuarios
+- Marca dietas(si tiene el rol de nutricionista)
+
+Usuarios
+- Plantear sus propias rutinas
+- Anotar PR
+- Crear rutinas
+- Añadir series
+
+
+2. Análisis de requisitos del sistema
+Se recopilan los requisitos y se enumeran para presentarlos al cliente: 
+Requisitos funcionales
+- Crear una base de datos que cumpla los requisitos
+- Crear roles: Staff, Entrenadores, Usuarios
+- Gestión de clases programdas
+- Facilitar la gestión de eventos
+- Administración de usuarios (registro, verificación de identidad y login)
+- Almacenar datos de entradas y salidas
+
+Requisitos no funcionales
+- Facilitar el control de eventos
+- Control de flujo de personas
+- Sincronización de datos a tiempo real
+- Marco legal
+
+Cuando se aprueben estos puntos se les fijará una fecha en la cual tendrán que estar terminados
+
+
+3. Ciclo de vida
+El modelo de ciclo de vida seleccionado será el modelo de desarrollo incremental, debido a que se deberán de entregar los requisitos según su importancia pudiendo añadir cambios y mejoras en versiones futuras.
+
+
+4. Diseño
+Será una aplicación web y multiplataforma de uso fácil e intuitivo, en la cual podrás tener toda tu información acerca del gimnasio en una sola app.
+En principio, la aplicación te permitirá a través de una base de datos acceder a tu progreso en el gimnasio pudiendo ver tus avances en los diversos ejercicios o de manera general general.
+
+
+5. Codificación
+ En esta etapa se llevará a cabo la programación de todos los datos e instrucciones. En principio, para desarrollar el software utilizaremos Java, debido a que es un lenguaje orientado a objetos gratuito de código abierto, además, se utilizará IntelliJ a modo de entorno de desarrollo.
+
+ Los servidores se alojarán en páginas de PHP ya que puede integrar HTML. El sistema de gestión de datos será mediante MySQL y para gestionar y ejecutar peticiones en SQL, permitiendo crear, modificar, actualizar y eliminar datos, además de recuperar información y poder realizar consultas de manera estructurada y lógica.
+
+
+6.Pruebas 
+ Se utilizará JUnit, el entorno de pruebas de Java, para detectar errores.
+
+
+7. Explotación
+ Una vez realizado los anteriores procesos ya documentados toca la instalación, puesta a punto y funcionamiento de la aplicación en el equipo del cliente. En este punto se transfieren los programas al ordenador del cliente, se configuran y verifican. También se realizan Beta test en el equipo del cliente con las cargas habituales de trabajo. 
+
+
+8. Mantenimiento
+ Esta etapa no tendrá fecha límite, Se deberán tener en cuenta los posibles errores y las mejoras que se podrán realizar a medida que los nuevos avances puedan ir dejando algunos parámetros obsoletos o insuficientes o que surjan nuevas necesidades del cliente, por las que sería mejor adaptar el software a nuevas tendencias del mercado o de la industria de cara a posibles mejoras y optimizaciones del software.
+
+
+9. Documentación 
+ Se le facilitará toda la información del proceso de desarrollo, para que puedan estar informados y usar la documentación en futuras revisiones del producto. La documentación dada será; 
+- El manual técnico 
+- Instrucciones de uso 
+- Guía de instalación 

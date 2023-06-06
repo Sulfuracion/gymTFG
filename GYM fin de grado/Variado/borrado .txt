@@ -1,0 +1,37 @@
+Este programa estará enfocado para el gimnasio, teniendo varias funciones disponibles
+
+Al entrar a este programa tendrás dos opciones, ver tu progreso o nuevo entrenamiento
+
+Si seleccionas “ver tu progreso” tendrás acceso a las siguientes funciones;
+- Tendrás un apartado especifico para los PR
+- La app te recomendará cuando debes ir subiéndole el peso o repes, además, te saldrá una guía con los pesos y repeticiones que sueles hacer
+- Podrás ver los entrenamientos que has hecho en un calendario y tu progreso en una grafica
+- Un calculo de cual seria tu repetición máxima
+
+
+Si seleccionas “nuevo entrenamiento” tendrás acceso a las siguientes funciones;
+- Una base de datos la cual guarde tus series con el peso que le has puesto, el numero de repeticiones y RIR (cuantas del fallo)
+
+
+
+
+Habrán varios ejercicios agrupados por grupos musculares (se podría poner un video de como realizar la técnica) y podrás añadir tus propios ejercicios y variantes de estos
+
+
+
+Tipos de usuarios
+
+Monitores (admin’s)
+- Un monitor(admin) puede ser entrenador, pero no al revés
+- Dar de alta a personas
+- Banear usuarios
+- Hacer eventos
+- Marcar rutinas
+
+Monitores (entrenadores)
+- Marcar rutina
+- Citar usuarios
+- Marca dietas(si tiene el rol de nutricionista)
+
+Usuarios
+- Plantear sus propias rutinas
