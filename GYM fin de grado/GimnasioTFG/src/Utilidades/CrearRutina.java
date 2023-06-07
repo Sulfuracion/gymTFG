@@ -1,3 +1,5 @@
+package Utilidades;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -5,7 +7,7 @@ import java.sql.SQLException;
 
 public class CrearRutina {
 
-    public static void main(String[] args) {
+    public void crearNuevaRutina() {
         // Datos de conexión a la base de datos
         String url = "jdbc:mysql://localhost/Gym";
         String usuario = "root";
